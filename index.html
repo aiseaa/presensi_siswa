@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Siswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Presensi Siswa</h2>
+        <form id="presensiForm" enctype="multipart/form-data">
+            <label for="nama">Nama Siswa:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="presensi">Presensi:</label>
+            <input type="text" id="presensi" name="presensi" required>
+
+            <label for="absensi">Status Kehadiran:</label>
+            <select id="absensi" name="absensi" required>
+                <option value="Hadir">Hadir</option>
+                <option value="Izin">Izin</option>
+                <option value="Sakit">Sakit</option>
+                <option value="Alpa">Alpa</option>
+            </select>
+
+            <label for="foto">Upload Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
